@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Token Telegram Bot và Chat ID
-BOT_TOKEN="8092272454:AAGG7TVVl_1gVnh4nuW2dM5JaN69lAzwgTA"
-CHAT_ID="6652541782"
+BOT_TOKEN="HERE!!!"
+CHAT_ID="HERE!!!"
 
 # Đặt ngưỡng ping (ms) để cảnh báo
 PING_THRESHOLD=150
