@@ -60,7 +60,7 @@ do
     TTL=$(echo "$PING_RESULT" | grep -oP 'TTL=\K\d+')
 
     # Chỉ thông báo byte, time và TTL
-    MESSAGE="📊 [$TIMESTAMP] [$USERNAME] Ping tới $GATEWAY_IP thành công. Dữ liệu: bytes=$BYTE time=$TIME ms TTL=$TTL"
+    MESSAGE="📊 [$TIMESTAMP] [$USERNAME] Ping to $GATEWAY_IP successful. Data: bytes=$BYTE time=$TIME ms TTL=$TTL"
     echo "$MESSAGE" >> "$LOG_FILE"
     send_alert "$MESSAGE"
 
@@ -79,7 +79,7 @@ do
             TTL=$(echo "$PING_RESULT" | grep -oP 'TTL=\K\d+')
 
             # Chỉ thông báo byte, time và TTL
-            MESSAGE="📊 [$TIMESTAMP] [$USERNAME] Ping tới $SITE thành công. Dữ liệu: bytes=$BYTE time=$TIME ms TTL=$TTL"
+            MESSAGE="📊 [$TIMESTAMP] [$USERNAME] Ping to $SITE successful. Data: bytes=$BYTE time=$TIME ms TTL=$TTL"
             echo "$MESSAGE" >> "$LOG_FILE"
             send_alert "$MESSAGE"
 
