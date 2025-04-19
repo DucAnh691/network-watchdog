@@ -15,11 +15,11 @@ Tạo file service tại:
 
 ## Cài đặt
 
-sudo chmod +x /opt/net_watchdog/net_watchdog.sh
-sudo systemctl daemon-reexec
-sudo systemctl daemon-reload
-sudo systemctl enable net_watchdog.service
-sudo systemctl start net_watchdog.service
+sudo chmod +x /opt/net_watchdog/net_watchdog.sh 
+sudo systemctl daemon-reexec 
+sudo systemctl daemon-reload 
+sudo systemctl enable net_watchdog.service 
+sudo systemctl start net_watchdog.service 
 
 ## Kiểm tra hoạt động:
 
