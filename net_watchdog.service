@@ -1,0 +1,13 @@
+[Unit]
+Description=Network Watchdog Service
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /opt/net_watchdog/net_watchdog.sh
+Restart=always
+RestartSec=5
+StandardOutput=null
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
