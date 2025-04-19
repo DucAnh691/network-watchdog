@@ -42,5 +42,15 @@ nano ~/network_watchdog.sh
 chmod +x ~/network_watchdog.sh
 nohup ~/network_watchdog.sh > ~/watchdog.out 2>&1 &
 
+## Kiểm tra script đang chạy
+ps aux | grep network_watchdog.sh
+
+## Khởi động script cùng window
+wsl -d Ubuntu bash -c "~/network_watchdog.sh"
+
+## Xem log trong WSL
+cat /var/log/netwatchdog/network_$(date +%F).log
+
+
 
 
